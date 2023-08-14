@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="px-9 mt-24 w-fit m-auto border rounded shadow-2xl p-14">
+        <h1 class="text-center text-5xl font-bold">To Do App👻</h1>
+        <div class="flex justify-center gap-2 mt-5">
+            <input type="text" placeholder="Type here" id="input" class="input input-bordered input-success w-full max-w-xs" />
+        <button class="btn btn-outline btn-success " id="add-task">Add Task</button>
+        </div>
+        <hr class="my-5">
+        <div id="task-contaner">
+            <h1 class="text-center text-3xl font-bold text-emerald-600 border-b w-fit m-auto">Your Task</h1>
+           <div class="flex justify-end mt-3">
+            <button class="btn btn-error" id="delete-btn">Delete</button>
+           </div>
+           <div id="task" class="border rounded p-14 mt-5 shadow"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
